@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<TextView
+    android:id="@+id/textViewLeft"
+    android:layout_width="64dp"
+    android:layout_height="48dp"
+    android:gravity="end|center"
+    android:text="S0:" />
+<TextView
+    android:id="@+id/textViewRight"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_toRightOf="@id/textViewLeft"
+    android:gravity="end|center"
+    android:text="TextView" />
+</RelativeLayout>

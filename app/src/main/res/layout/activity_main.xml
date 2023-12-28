@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ListView
+        android:id="@+id/stackView"
+        android:layout_width="205dp"
+        android:layout_height="384dp"
+        android:divider="#000000"
+        android:dividerHeight="0dp"
+        android:padding="0dp"
+        android:stackFromBottom="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Enter a number here ..."
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/keyboard" />
+    <TableLayout
+        android:id="@+id/actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TableRow
+            android:id="@+id/actionsD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/x1"
+                style="@style/buttonSmall"
+                android:text="1/X" />
+            <Button
+                android:id="@+id/xy"
+                style="@style/buttonSmall"
+                android:text="y^x" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/actionsC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/add"
+                style="@style/buttonSmall"
+                android:text=" + " />
+            <Button
+                android:id="@+id/multiply"
+                style="@style/buttonSmall"
+                android:text=" * " />
+        </TableRow>
+        <TableRow
+            android:id="@+id/actionsB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/subtract"
+                style="@style/buttonSmall"
+                android:text=" - " />
+            <Button
+                android:id="@+id/divide"
+                style="@style/buttonSmall"
+                android:text=" / " />
+        </TableRow>
+        <TableRow
+            android:id="@+id/actionsA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/enter"
+                style="@style/buttonSmall"
+                android:text="enter" />
+            <Button
+                android:id="@+id/delete"
+                style="@style/buttonSmall"
+                android:text="del" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TableRow
+            android:id="@+id/keysD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/key7"
+                style="@style/buttonLarge"
+                android:text=" 7 " />
+            <Button
+                android:id="@+id/key8"
+                style="@style/buttonLarge"
+                android:text=" 8 " />
+            <Button
+                android:id="@+id/key9"
+                style="@style/buttonLarge"
+                android:text=" 9 " />
+        </TableRow>
+        <TableRow
+            android:id="@+id/keysC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/key4"
+                style="@style/buttonLarge"
+                android:text=" 4 " />
+            <Button
+                android:id="@+id/key5"
+                style="@style/buttonLarge"
+                android:text=" 5 " />
+            <Button
+                android:id="@+id/key6"
+                style="@style/buttonLarge"
+                android:text=" 6 " />
+        </TableRow>
+        <TableRow
+            android:id="@+id/keysB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/key1"
+                style="@style/buttonLarge"
+                android:text=" 1 " />
+            <Button
+                android:id="@+id/key2"
+                style="@style/buttonLarge"
+                android:text=" 2 " />
+            <Button
+                android:id="@+id/key3"
+                style="@style/buttonLarge"
+               android:text=" 3 " />
+        </TableRow>
+        <TableRow
+            android:id="@+id/spaceA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TableRow>
+        <TableRow
+            android:id="@+id/keysA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/key0"
+                style="@style/buttonLarge"
+                android:text=" 0 " />
+            <Button
+                android:id="@+id/keyPeriod"
+                style="@style/buttonLarge"
+                android:text=" . " />
+            <Button
+                android:id="@+id/keySpace"
+                style="@style/buttonLarge"
+                android:text="spc" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
